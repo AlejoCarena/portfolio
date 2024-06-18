@@ -10,9 +10,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
-section{
-    scroll-margin:0;
+.container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.pagina
+{
+    scroll-snap-align: start;
 }
 
 #pagina_principal {
@@ -386,7 +394,7 @@ section{
     cursor: pointer;
   }
     
-  /* @media (max-width: 430px){
+  @media (max-width: 430px){
     .logo img{
         width: 100px;
     }
@@ -442,4 +450,4 @@ section{
     .proyectos a{
         height:unset;
     }
-  } */
+  }
