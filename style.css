@@ -7,12 +7,20 @@ body {
     background-color: #1b263b;
     margin: 0;
     padding: 0;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
-section{
-    scroll-margin:0;
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width:none;
+    height: 100vh; /* Asegúrate de que el contenedor tenga una altura definida */
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh; /* Asegúrate de que las secciones tengan una altura adecuada */
 }
 
 #pagina_principal {
@@ -20,7 +28,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    position: relative;
 }
 .logo {
     position:absolute; /* Posición fija */
@@ -121,11 +129,11 @@ section{
     background-color: #778da9;
 }
 .proyectos{
+    margin-top: 80px;
     width: 1000px;
     display: flex;
     align-items: flex-start;
     justify-content:flex-start;
-    margin-top: 80px;
     margin-left: 6%;
     overflow: hidden; /* Para aplicar el border-radius correctamente */
     border-radius: 100px;
@@ -314,6 +322,7 @@ section{
     font-style: normal;
     font-size: 6em;
     margin-top: 0;
+    color: #fff;
 }
 .about-me-texto p{
    width: 50%;
@@ -385,8 +394,43 @@ section{
     color: #fff;
     cursor: pointer;
   }
+  .seccion0{
+    display: none;
+  }
     
-  /* @media (max-width: 430px){
+  @media (max-width: 430px){
+    body{
+        overflow-x: hidden;
+        display: unset;
+    }
+    .seccion0{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        font-family: "Prata", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #e0e1dd;
+        backdrop-filter: opacity(10px);
+    }
+    .about-me-texto h1{
+        font-size: 2em;
+    }
+    .about-me-texto p{
+        font-size: 0.8em;
+        width: 80%;
+        text-align: center;
+    }
+    .form{
+        width: 80%;
+    }
+    .about-me-img{
+        display: none;
+    }
+    .titulo2{
+        display:flex; 
+    }
     .logo img{
         width: 100px;
     }
@@ -405,9 +449,9 @@ section{
     }
     .proyectos{
         display: block;
-        margin-top: 80px;
         margin-left: 0;
         height: 43vh;
+        margin-top: 0;
     }
     .proyectos-par{
         margin-right: 0;
@@ -442,4 +486,4 @@ section{
     .proyectos a{
         height:unset;
     }
-  } */
+  }
