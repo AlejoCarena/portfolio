@@ -289,7 +289,30 @@ section {
     margin-bottom: 0;
     margin-right: 15px;
 }
+@keyframes colorChange {
+    0% { background-color: #415a77; }
+    25% { background-color: #778da9; }
+    50% { background-color: #1b263b; }
+    75% { background-color: #567497; }
+    100% { background-color: #415a77; }
+}
 
+.cv-button {
+    display: inline-block;
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    animation: colorChange 5s infinite;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #1b263b;
+}
 
 
 
@@ -324,7 +347,7 @@ section {
     color: #fff;
 }
 .about-me-texto p{
-   width: 50%;
+   width: 55%;
    color: #e0e1dd;
 }
 
@@ -399,7 +422,7 @@ section {
   .about-me-texto p{
     text-align: center;
   }
-  @media (max-width: 430px){
+  @media (max-width: 993px){
     body{
         overflow-x: hidden;
         display: unset;
@@ -504,5 +527,7 @@ section {
     .about-me-texto p{
         text-align: center;
     }
-
+    .titulo1,.titulo2{
+        font-size: 0.8em;
+    }
   }
