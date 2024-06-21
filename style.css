@@ -114,6 +114,7 @@ section {
 }
 /*<BUTTONS/>*/
 .imagen img{
+    filter: brightness(0.5);
     position: absolute;
     width: 1500px;
     right: 0;
@@ -427,6 +428,12 @@ section {
         overflow-x: hidden;
         display: unset;
     }
+    .imagen img{
+        filter: brightness(0.5);
+    }
+    .inicio h1 span {
+        color: #ffffff;
+    }
     .seccion0{
         display: flex;
         align-items: center;
@@ -474,17 +481,27 @@ section {
     .proyectos{
         display: block;
         margin-left: 0;
-        height: 43vh;
+        height: 40vh;
         margin-top: 0;
     }
     .proyectos-par{
         margin-right: 0;
-        height: 43vh;
+        height: 40vh;
         margin-bottom: 80px;
 
     }
+    .links a img, .links-par a img{
+        width: 26px;
+        margin-top: 10px;
+    }
+    .about-me-texto h1{
+        top: 5%;
+        transform: translatey(-5%);
+    }
+    .proyectos p,.proyectos-par p{
+        text-align: center;
+    }
     .proyectos-par p{
-        text-align:left;
         font-size: 1em;
     }
     .textoytecnologias h2{
@@ -509,6 +526,9 @@ section {
     }
     .proyectos a{
         height:unset;
+    }
+    .proyectos p{
+        font-size: 1em;
     }
   }
   @media (min-width: 993px) and (max-width: 1400px){
