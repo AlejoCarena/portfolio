@@ -125,17 +125,36 @@ section {
 #segunda-pagina {
     width: 200vw;
     display: flex;
+    position: relative;
+}
+.mostrar{
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%);
+    transition: all 0.5s ease;
+}
+.ocultar{
+    position: absolute;
+    left: 0%;
+    transform: translate(0%);
+    transition: all 0.5s ease;
+}
+.arrow-l{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translatex(-100%, -50%);
+    width: 80px;
 }
 .arrow-r
 {
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translate(0, -50%);
-}
-.arrow-r img{
+    transform: translatex(0, -50%);
     width: 80px;
 }
+
 .pag1{
     height: 100vh; /* Ajustar según el contenido adicional */
     width: 100vw;
