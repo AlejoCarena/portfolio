@@ -123,8 +123,30 @@ section {
     z-index: -1;
 }
 #segunda-pagina {
+    width: 200vw;
+    display: flex;
+}
+.arrow-r
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+.arrow-r img{
+    width: 80px;
+}
+.pag1{
     height: 100vh; /* Ajustar según el contenido adicional */
-    width: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #778da9;
+    position: relative;
+}
+#pag2{
+    height: 100vh; /* Ajustar según el contenido adicional */
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     background-color: #778da9;
@@ -465,6 +487,7 @@ section {
     .logo img{
         width: 100px;
     }
+
     .inicio h1{
         font-size: 2em;
     }
@@ -530,7 +553,7 @@ section {
     .proyectos p{
         font-size: 1em;
     }
-  }
+}
   @media (min-width: 993px) and (max-width: 1400px){
     .proyectos,.proyectos-par{
         height: 40vh;
