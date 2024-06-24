@@ -12,6 +12,7 @@ body {
 }
 .container {
     overflow: auto;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scrollbar-width:none;
     height: 100vh; /* Asegúrate de que el contenedor tenga una altura definida */
