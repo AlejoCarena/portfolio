@@ -425,7 +425,7 @@ section {
         display: none;
     }
   }
-  @media (max-width: 670px){
+  @media (max-width: 400px){
     .textoytecnologias{
         font-size: 0.9em;
     }
@@ -437,6 +437,9 @@ section {
     .proyecto{
         width: 430px;
         height: 20vh;
+    }
+    .textoytecnologias{
+        font-size: 0.9em;
     }
   }
   @media (max-width: 993px){
