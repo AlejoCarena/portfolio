@@ -426,6 +426,14 @@ section {
     }
   }
   @media (max-width: 670px){
+    .textoytecnologias{
+        font-size: 0.9em;
+    }
+    .textoytecnologias p{
+        display: none;
+    }
+  }
+  @media (max-width: 670px){
     .proyecto{
         width: 430px;
         height: 20vh;
